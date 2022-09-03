@@ -46,3 +46,59 @@ let ourStr ="hello" + "world";
  */
 const myWord = "Derek";
 const mySentence = "Hello, my name is " + myWord + " , Nice ot meet you";
+
+/**
+ * Appending Variables to Strings
+ */
+const anAdjective = "awesome!";
+let ourString = "you are ";
+ourString += anAdjective; // output: you are awesome!
+
+/**
+ * Length of String
+ */
+const myLengthStr = "helloguys";
+myLengthStr.length; // output: 9
+
+/**
+ * Use Bracket Notation to Find the First Character in a String
+ */
+const firstName = "Derek";
+const firstLetter = firstName[0]; // output: D
+
+/**
+ * Understanding String Immutability
+ */
+let myString = "Bob";
+myString[0] = "J";
+/**
+ * cannot change the value of myString to Job, because the contents 
+ * of myString cannot be altered. Note that this does not mean that 
+ * myString cannot be changed, just that the individual characters 
+ * of a string literal cannot be changed. The only way to change 
+ * myString would be to assign it with a new string, like this:
+ */
+myString = "Job";
+
+
+/**
+ * Use Bracket Notation to FInd the Nth Character in a String
+ */
+const secondLetterIS = myString[1]; // output: o
+
+/**
+ * Use Bracket Notation to FInd the Last Character in a String
+ */
+const lastLetter = myString[myString.length - 1]; // output: b
+
+/**
+ * Use Bracket Notation to Find the Nth-to-Last Character in a String
+ */
+const secondToLastLetter = myString[myString.length - 2]; // output: o
+
+/**
+ * Word Blanks
+ */
+const word1 = "hot", word2 = "laughed", word3 = "silly";
+const sentance = "It was really "+word1+ ", and we "+word2+" ourselves "+word3+".";
+// output: It was really hot, and we laughed ourselves silly.
